@@ -1,0 +1,102 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.add {
+  margin-top: 1rem;
+  color: #484848;
+  background-color: #ffffff;
+}
+.add:hover {
+  color: #ffffff;
+  background-color: #525252;
+}
+.completed {
+  margin-top: 1rem;
+  background-color: #76e765;
+}
+.completed:hover {
+  background-color: #44aa37;
+}
+
+.incomplete {
+  margin-top: 1rem;
+  background-color: #eac73c;
+}
+.incomplete:hover {
+  background-color: #dfba29;
+}
+
+.removed {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  padding: 8px;
+  margin-left: 4rem;
+  margin-top: -0.4rem;
+  border-radius: 50%;
+  background-color: rgb(153, 20, 20);
+}
+.removed:hover {
+  background-color: rgb(233, 69, 69);
+}
+.input-wrapper input {
+  background-color: #eee;
+  border: none;
+  padding: 1rem;
+  font-size: 1rem;
+  width: 13em;
+  border-radius: 1rem;
+  color: rgb(39, 39, 39);
+  box-shadow: 0 0.4rem #dfd9d9;
+  cursor: pointer;
+}
+
+.input-wrapper input:focus {
+  outline-color: rgb(39, 39, 39);
+}
+
+.card {
+  width: 12rem;
+  padding: 1em;
+  margin: 1rem;
+  background-color: #ffffff;
+  color: #484848;
+  border-radius: 2rem;
+}
